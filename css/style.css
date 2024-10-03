@@ -10,10 +10,15 @@
 
 body {
     font-family: 'Outfit', sans-serif;
-    background-color: #121826;
+    background-color: var(--one);
 }
 
 /* Utilities start */
+:root {
+    --one: #121826;
+    --two: #9DA3AE;
+}
+
 h1,
 h2,
 p {
@@ -34,7 +39,7 @@ img {
 
 /* Features */
 .features {
-    background-color: #121826;
+    background-color: var(--one);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -57,7 +62,7 @@ img {
 }
 
 .content__paragraph {
-    color: #9DA3AE;
+    color: var(--two);
     margin-top: 1rem;
 }
 
@@ -75,7 +80,7 @@ img {
 
 .cards p {
     font-size: 1rem;
-    color: #9DA3AE;
+    color: var(--two);
 }
 
 .card-1,
