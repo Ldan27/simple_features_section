@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #121826;
+}
+
+/* Utilities start */
+h1,
+h2,
+p {
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 240px;
+    border-radius: 20px;
+}
+
+/* Utilities end */
+
+/* Features */
+.features {
+    background-color: #121826;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+}
+
+/* Content */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.content__headings {
+    font-size: 2.5rem;
+}
+
+.content__paragraph {
+    color: #9DA3AE;
+    margin-top: 1rem;
+}
+
+/* Cards */
+
+.cards {
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+}
+
+.cards h2 {
+    font-size: 1.25rem;
+}
+
+.cards p {
+    font-size: 1rem;
+    color: #9DA3AE;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    padding: 2rem;
+    background: #212936;
+    border-radius: 20px;
+    max-width: 300px;
+    max-height: 420px;
+    transition: 0.4s ease;
+}
+
+.card-1:hover,
+.card-2:hover,
+.card-3:hover {
+    transform: scale(1.1);
+}
+
+.card-1__emojy,
+.card-2__emojy,
+.card-3__emojy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    border-radius: 50px;
+    padding: 1rem;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+
+}
+
+.card-1__emojy {
+    background-color: #FCEED8;
+}
+
+.card-2__emojy {
+    background-color: #DEE9FC;
+}
+
+.card-3__emojy {
+    background-color: #FBE5E6;
+}
+
+/* Media Queries start */
+
+@media(max-width: 1024px) {
+    .cards {
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width: 640px) {
+    .cards {
+        flex-direction: column;
+        gap: 1.3rem;
+    }
+
+    .features {
+        margin-bottom: 20px;
+    }
+
+    .content__headings {
+        font-size: 2.2rem;
+    }
+}
+
+/* Media Queries end */
